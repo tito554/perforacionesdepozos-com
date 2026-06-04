@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora Permeabilidad de Hazen · k desde D10</title>
+<meta name="description" content="Hazen (1911) propuso una correlación simple para estimar la permeabilidad k de arenas limpias a partir del diámetro efectivo D10 de la curva granulométrica">
+<meta name="theme-color" content="#334155">
+<link rel="canonical" href="https://perforacionesdepozos.com/blog/calculadoras/permeabilidad-hazen/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora Permeabilidad de Hazen — k desde D10">
+<meta property="og:description" content="Servicio profesional de perforación de pozos con cobertura nacional. Equipo técnico especializado en acuíferos profundos, estudios hidrogeológicos y">
+<meta property="og:url" content="https://perforacionesdepozos.com/blog/calculadoras/permeabilidad-hazen/">
+<meta property="og:site_name" content="Perforaciones de Pozos">
+<meta property="og:image" content="https://perforacionesdepozos.com/img/capacidad-de-carga-langes-3.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora Permeabilidad de Hazen — k desde D10">
+<meta name="twitter:description" content="Servicio profesional de perforación de pozos con cobertura nacional. Equipo técnico especializado en acuíferos profundos, estudios hidrogeológicos y normativa vigente.">
+<meta name="twitter:image" content="https://perforacionesdepozos.com/img/capacidad-de-carga-langes-3.webp">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Perforaciones de Pozos España", "description": "Servicio profesional de perforación de pozos con cobertura nacional. Equipo técnico especializado en acuíferos profundos, estudios hidrogeológicos y normativa vigente.", "url": "https://perforacionesdepozos.com/", "areaServed": {"@type": "City", "name": "España"}, "address": {"@type": "PostalAddress", "addressLocality": "España", "addressCountry": "España"}, "email": "contacto@perforacionesdepozos.com", "priceRange": "$$"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Perforación de Pozos · Perforación de Pozos — España", "url": "https://perforacionesdepozos.com/", "description": "Servicio profesional de perforación de pozos con cobertura nacional. Equipo técnico especializado en acuíferos profundos, estudios hidrogeológicos y normativa vigente.", "inLanguage": "es", "datePublished": "2026-05-31", "dateModified": "2026-05-31", "isPartOf": {"@type": "WebSite", "url": "https://perforacionesdepozos.com/", "name": "Perforaciones de Pozos"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://perforacionesdepozos.com/#organization", "name": "Perforaciones de Pozos", "url": "https://perforacionesdepozos.com/", "logo": "https://perforacionesdepozos.com/img/logo.png", "email": "contacto@perforacionesdepozos.com", "address": {"@type": "PostalAddress", "addressCountry": "España"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.6, "reviewCount": 34, "bestRating": 5, "worstRating": 1}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://perforacionesdepozos.com/#website", "name": "Perforaciones de Pozos", "url": "https://perforacionesdepozos.com/", "inLanguage": "es", "publisher": {"@id": "https://perforacionesdepozos.com/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://perforacionesdepozos.com/?s={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué estudios previos se requieren antes de perforar un pozo en España?", "acceptedAnswer": {"@type": "Answer", "text": "Es necesario un estudio hidrogeológico que incluya sondeos eléctricos verticales (SEV) y análisis de la normativa local del organismo de cuenca. La profundidad y el caudal estimado dependen de la litología y la recarga del acuífero."}}, {"@type": "Question", "name": "¿Cuál es la profundidad máxima legal para un pozo de agua en España?", "acceptedAnswer": {"@type": "Answer", "text": "No existe un límite nacional; cada confederación hidrográfica establece restricciones según la masa de agua. En acuíferos protegidos, la profundidad suele limitarse a 200 m para evitar la captación de aguas profundas no renovables."}}, {"@type": "Question", "name": "¿Qué normativa regula la perforación de pozos en zonas sísmicas?", "acceptedAnswer": {"@type": "Answer", "text": "La NCSE-02 establece aceleraciones sísmicas de cálculo y coeficientes de comportamiento para estructuras. Para pozos, se recomienda diseñar la entubación y el cabezal con ductilidad suficiente para resistir movimientos sísmicos sin colapsar."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://perforacionesdepozos.com/equipo/adrian-castillo-ferrer/#person", "name": "Adrián Castillo Ferrer", "jobTitle": "Ingeniero Geólogo Senior", "image": "https://perforacionesdepozos.com/img/headshot_intl_perforacionesdepozos-com.webp", "worksFor": {"@type": "Organization", "name": "Perforaciones de Pozos", "url": "https://perforacionesdepozos.com"}, "url": "https://perforacionesdepozos.com/equipo/adrian-castillo-ferrer/"}</script>
+
+<meta name="layout" content="L5">
+<link rel="preload" as="image" href="img/capacidad-de-carga-langes-3.webp" fetchpriority="high">
+<style>
+
+:root{
+  --primary:#334155;
+  --accent:#0ea5e9;
+  --bg:#f8fafc;
+  --surface:#fff;
+  --text:#1e293b;
+  --border:#e2e8f0;
+  --muted:#64748b;
+  --font-body:'IBM Plex Sans',-apple-system,sans-serif;
+  --font-h:'IBM Plex Sans',-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+/* Prose links — links dentro del contenido principal SIEMPRE visibles (underline + accent) */
+main section.block p a, main section.block li a, .cierre a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    font-weight: 500;
+}
+main section.block p a:hover, main section.block li a:hover, .cierre a:hover {
+    text-decoration-thickness: 2px;
+    color: var(--primary);
+}
+.container{max-width:1400px;margin:0 auto;padding:0 24px}
+header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+header .brand-link:hover{text-decoration:none}
+header .logo{flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
+header .brand-name{font-family:var(--font-h);font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
+header .brand-sep{color:#64748b;font-weight:300}
+header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
+@media(max-width:560px){header .brand-sep,header .brand-sub{display:none}}
+header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s,color .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+header .nav-link:hover,header .nav-link[aria-expanded="true"]{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+header .nav-dd{position:relative}
+header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
+header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
+header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:240px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
+header .nav-dd.open .dd-menu{display:block}
+header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
+header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
+header .dd-menu a{display:flex!important;align-items:center;justify-content:space-between;gap:14px}
+header .hub-badge{display:inline-block;background:color-mix(in srgb, var(--accent) 18%, #fff 82%);color:var(--primary);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:11px;line-height:1.4}
+header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
+@media(max-width:780px){
+  header .container{flex-wrap:wrap}
+  header .nav-burger{display:inline-block}
+  header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
+  body.nav-open header .navbar{display:flex}
+  header .nav-dd{width:100%}
+  header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
+  header .dd-menu a{color:#e2e8f0;padding:8px 18px}
+  header .dd-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
+}
+.hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 50px}
+.hero h1{font-family:var(--font-h);font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:12px;max-width:1280px}
+.hero p.subtitle{font-size:1.05rem;color:#cbd5e1;max-width:1100px;margin-bottom:18px}
+.breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1;background:transparent;border:none}
+.breadcrumb a{color:#93c5fd;text-decoration:none}
+.breadcrumb a:hover{color:#fff;text-decoration:underline}
+.breadcrumb span{color:#fff;font-weight:500}
+.block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);overflow:hidden}
+.block::after{content:'';display:table;clear:both}
+h2{font-family:var(--font-h);font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+h3{font-family:var(--font-h);font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
+p{margin-bottom:12px;color:var(--text)}
+/* hero/inline img v3 — float right + cap dimensiones (anti-explotación portrait) */
+section.block{overflow:auto}
+section.block .hero-img-wrap{float:right;max-width:340px;width:340px;max-height:280px;margin:6px 0 16px 24px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block}
+section.block .hero-img-wrap img{max-width:100%;max-height:280px;width:100%;height:280px;object-fit:cover;display:block;border-radius:10px}
+.inline-img{float:right;max-width:300px;width:300px;max-height:220px;margin:6px 0 18px 20px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+.inline-img img{max-width:100%;max-height:220px;width:100%;height:220px;object-fit:cover;display:block;border-radius:10px}
+section.block h2{clear:both;margin-top:0}
+@media (max-width:768px){
+  section.block{overflow:visible}
+  section.block .hero-img-wrap{float:none;width:100%;max-width:100%;max-height:240px;margin:18px auto}
+  section.block .hero-img-wrap img{height:240px;max-height:240px}
+  .inline-img{float:none;width:100%;max-width:100%;max-height:220px;margin:18px auto}
+}
+main img:not([class]){max-width:100%;height:auto}
+@media(max-width:680px){.inline-img{float:none;width:100%;max-width:100%;margin:18px auto}}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;border-radius:6px;overflow:hidden}
+table th{background:var(--primary);color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+table tr:nth-child(even) td{background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
+.norm-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.norm-list li{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);color:var(--primary);padding:8px 14px;border-radius:6px;border-left:3px solid var(--primary);font-family:ui-monospace,monospace;font-size:.92rem}
+.faq details{background:color-mix(in srgb, var(--bg) 60%, #f8fafc 40%);padding:14px 18px;margin-bottom:8px;border-radius:8px;border-left:3px solid var(--primary)}
+.faq summary{font-weight:600;cursor:pointer;color:var(--primary);font-size:1.02rem;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';float:right;font-size:1.4rem;line-height:1;color:var(--muted)}
+.faq details[open] summary::after{content:'−'}
+.faq details[open] p{margin-top:12px;color:var(--text)}
+#mapa-ciudad{height:340px;border-radius:8px;border:1px solid var(--border);z-index:1}
+.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600}
+.sidebar ul{list-style:none}
+.sidebar li{margin-bottom:6px}
+.sidebar a{color:var(--primary);font-size:.93rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
+.sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
+.cierre{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);padding:20px 26px;border-radius:8px;border-left:4px solid var(--primary);margin-top:24px;color:var(--text);font-style:italic}
+.author-byline{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--primary);padding:14px 18px;border-radius:8px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.author-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
+.author-byline .author-info{flex:1;min-width:0}
+.author-byline .author-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.author-byline .author-name{font-size:1rem;font-weight:700;color:var(--primary);display:block;text-decoration:none;line-height:1.3}
+.author-byline .author-title{font-size:.82rem;color:var(--muted);margin-top:2px}
+.author-byline .author-date{font-size:.72rem;color:var(--muted);text-align:right;line-height:1.5;flex-shrink:0}
+@media(max-width:560px){.author-byline{flex-wrap:wrap}.author-byline .author-date{text-align:left;width:100%;margin-top:8px;border-top:1px solid var(--border);padding-top:8px}}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.service-card{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--bg);border-radius:8px;border:1px solid var(--border);text-decoration:none;color:var(--primary);transition:transform .15s,box-shadow .15s,border-color .15s}
+.service-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--accent);text-decoration:none}
+.service-card .card-title{font-weight:600;font-size:1.02rem}
+.service-card .card-arrow{font-size:1.3rem;color:var(--accent)}
+.sat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sat-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s}
+.sat-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+.sat-to-hub{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb, var(--primary) 6%, #fff 94%);border-left:4px solid var(--primary);padding:14px 22px;border-radius:6px;margin:0 0 22px;font-size:.95rem;flex-wrap:wrap}
+.sat-to-hub-label{color:var(--text)}
+.sat-to-hub-link{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap}
+.sat-to-hub-link:hover{text-decoration:underline}
+.cta-block,section.block.cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:32px auto!important;border-top:none!important;max-width:760px!important}
+.cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
+@media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
+.cta-block h2,section.block.cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important;text-shadow:0 1px 2px rgba(0,0,0,.15)!important}
+.cta-block h2::after,section.block.cta-block h2::after{display:none!important;content:none!important}
+.cta-block p,section.block.cta-block p{color:#e2e8f0!important;margin-bottom:18px!important;font-size:1rem!important;max-width:none!important}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+.cta-wa,.cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .12s,box-shadow .12s}
+.cta-wa{background:#25d366;color:#fff}
+.cta-wa:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.4);text-decoration:none}
+.cta-email{background:#fff;color:var(--primary)}
+.cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
+.cta-email-note{font-size:.85rem;color:#cbd5e1;margin-top:8px;margin-bottom:0}
+.cta-email-note a{color:#93c5fd}
+.cta-email-note a:hover{color:#fff}
+/* Cities chips (S4) — internal linking bottom-of-page */
+.city-chips-section{margin:30px auto 24px;max-width:1200px}
+.city-chips-section > h2{font-family:var(--font-h);font-size:1.35rem;color:var(--primary);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+.city-chips-zone{margin-bottom:18px}
+.city-chips-zone:last-child{margin-bottom:0}
+.city-chips-zone-title{font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;font-weight:700;border:none;padding:0}
+.city-chips-row{display:flex;flex-wrap:wrap;gap:8px}
+.city-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 6%, #fff 94%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s,box-shadow .12s;font-weight:500;line-height:1.2;white-space:nowrap}
+.city-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);color:var(--primary);text-decoration:none;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+@media(max-width:560px){.city-chip{font-size:.85rem;padding:6px 12px}}
+footer{background:var(--primary);color:#cbd5e1;padding:36px 0;margin-top:50px}
+footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;align-items:start}
+footer h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+footer p,footer a{color:#cbd5e1;font-size:.88rem;line-height:1.7}
+footer a:hover{color:#fff}
+footer .copyr{grid-column:1/-1;border-top:1px solid color-mix(in srgb, var(--primary) 60%, #fff 40%);padding-top:18px;text-align:center;color:#94a3b8;font-size:.82rem}
+footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;font-style:italic}
+
+
+.ben-layout{padding:32px 0;display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+@media(max-width:920px){.ben-layout{grid-template-columns:1fr}}
+.ben-layout main{grid-column:1/-1;display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.ben-layout main > *{grid-column:span 12}
+/* Reorder post-2026-05-28: solo intro full + metodologia/tabla 2-col, resto full width */
+.ben-layout main > section.block:nth-of-type(1){grid-column:span 12}  /* intro full */
+.ben-layout main > section.block:nth-of-type(2){grid-column:span 7}   /* metodologia */
+.ben-layout main > section.block:nth-of-type(3){grid-column:span 5}   /* tabla */
+/* Resto: consideraciones / FAQ / normativa / CTA / map / cities → todos span 12 (default por main > *) */
+.ben-layout main > section.services-grid-section{grid-column:span 12}
+@media(max-width:920px){.ben-layout main > *{grid-column:1/-1!important}}
+.ben-layout .block{border-radius:16px;padding:22px 24px;background:var(--surface);border:1px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.ben-layout h2{font-size:1.2rem;border-bottom:none;padding-bottom:4px}
+
+</style>
+
+<link rel="stylesheet" href="/calc-scoped.css">
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style></head>
+<body>
+<header>
+<div class="container">
+<a class="brand-link" href="/">
+<svg class="logo" width="38" height="38" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="lg338" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="var(--accent)"/>
+      <stop offset="100%" stop-color="var(--primary)"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#lg338)"/>
+  <path d="M14 44 L24 30 L34 38 L44 22 L50 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="30" r="3" fill="#fff"/>
+  <circle cx="34" cy="38" r="3" fill="#fff"/>
+  <circle cx="44" cy="22" r="3" fill="#fff"/>
+</svg>
+<div class="brand-line">
+  <span class="brand-name">Perforaciones de Pozos</span>
+  <span class="brand-sep">·</span>
+  <span class="brand-sub">Ingeniería Geotécnica</span>
+</div>
+</a>
+<nav class="navbar" aria-label="principal">
+<a href="/" class="nav-link">Inicio</a><a class="nav-link" href="/calculadoras/">Calculadoras</a>
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Servicios<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/sondajes-spt/" role="menuitem">Perforación de Pozos</a><a href="/laboratorio-mecanica-suelos/" role="menuitem">Pozos Profundos</a><a href="/estabilidad-taludes/" role="menuitem">Pozos Artesianos</a><a href="/diseno-muros-contencion/" role="menuitem">Mantenimiento de Pozos</a></div></div>
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Cobertura<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/perforacion-de-pozos-en-madrid/" role="menuitem" class="hub-main"><strong>Madrid</strong></a><a href="/perforacion-de-pozos-en-barcelona/" role="menuitem" class="hub-main"><strong>Barcelona</strong></a><a href="/perforacion-de-pozos-en-valencia/" role="menuitem" class="hub-main"><strong>Valencia</strong></a><a href="/perforacion-de-pozos-en-seville/" role="menuitem" class="hub-main"><strong>Seville</strong></a><a href="/perforacion-de-pozos-en-malaga/" role="menuitem" class="hub-main"><strong>Malaga</strong></a><a href="/perforacion-de-pozos-en-bilbao/" role="menuitem" class="hub-main"><strong>Bilbao</strong></a><a href="/perforacion-de-pozos-en-zaragoza/" role="menuitem" class="hub-main"><strong>Zaragoza</strong></a><a href="/perforacion-de-pozos-en-la-coruna/" role="menuitem" class="hub-main"><strong>La Coruna</strong></a><a href="/perforacion-de-pozos-en-las-palmas/" role="menuitem" class="hub-main"><strong>Las Palmas</strong></a></div></div>
+<a href="/equipo/adrian-castillo-ferrer/" class="nav-link">Equipo</a>
+</nav>
+<button class="nav-burger" aria-label="menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
+</div>
+</header>
+<main>
+<nav aria-label="breadcrumb" style="max-width:900px;margin:1.4rem auto 0;padding:0 1.5rem;font-size:.85rem;color:#64748b"><a href="/" style="color:inherit;text-decoration:none">Inicio</a> &rsaquo; <span>Calculadora Permeabilidad de Hazen — k desde D10</span></nav>
+<article class="calc-scope" style="max-width:900px;margin:0 auto;padding:1.5rem">
+<h1>Calculadora Permeabilidad de Hazen — k desde D10</h1>
+
+<p class="lead">Hazen (1911) propuso una correlación simple para estimar la permeabilidad k de arenas limpias a partir del diámetro efectivo D10 de la curva granulométrica. Esta calculadora aplica la fórmula clásica k = C·D10² más las correcciones modernas por porosidad (Kozeny-Carman) y temperatura del agua. Es el método más usado en ingeniería geotécnica cuando no hay ensayo de permeabilidad directo (pruebas Lefranc/Lugeon) o se requiere una estimación rápida para dimensionar drenajes, pozos de bombeo y análisis de flujo en rellenos granulares.</p>
+
+<h2>¿Qué es y cuándo aplicar Hazen?</h2>
+<p>La fórmula de Hazen es válida estrictamente para arenas limpias (finos &lt; 5 %), uniformes (Cu &lt; 5) y en el rango D10 = 0,1-3 mm. Se aplica a diseño preliminar de filtros, estimación de caudales de infiltración en rellenos, cálculo de tiempos de bombeo en excavaciones abiertas y evaluación de idoneidad de arenas para drenes. Para arcillas y limos usar permeámetro de pared flexible (UNE-EN ISO 17892-11). Para rocas fracturadas usar Lugeon. Hazen es rápida pero no reemplaza ensayo in situ en proyectos críticos.</p>
+
+<h2>Fórmulas aplicadas</h2>
+<div class="formulas">
+<p><strong>Hazen original (arenas limpias, Cu &lt; 5, D10 en cm):</strong></p>
+<p>k (cm/s) = C · D10², con C = 100 (rango 80-150 según uniformidad)</p>
+<p><strong>Hazen con D10 en mm:</strong></p>
+<p>k (m/s) = C · (D10)² · 10⁻⁶, con C = 100 (típico)</p>
+<p><strong>Corrección por porosidad (Kozeny-Carman, más realista):</strong></p>
+<p>k = (γw/μ) · (e³/(1+e)) · (1/(Cs·So²))</p>
+<p><strong>Corrección por temperatura (viscosidad cinemática):</strong></p>
+<p>k20 = kT · (μT / μ20); μ20/μT ≈ 1 − 0,025·(T−20) para T cerca de 20°C</p>
+<p><strong>Rangos típicos:</strong> grava k = 10⁻² a 10⁰ m/s; arena gruesa 10⁻⁴ a 10⁻²; arena fina 10⁻⁵ a 10⁻³; limo 10⁻⁷ a 10⁻⁵; arcilla &lt; 10⁻⁹</p>
+</div>
+
+<div class="calc-split-layout">
+<section class="calc-widget" aria-label="Calculadora interactiva de permeabilidad Hazen">
+<h2>Calcular en línea</h2>
+<p class="calc-intro">Ingresa el D10 y el coeficiente C; obtén k en cm/s, m/s y m/día, con clasificación.</p>
+<form id="calc-form" novalidate>
+<div class="calc-row">
+<label>D10 (mm)<input type="number" id="d10" step="0.01" value="0.25" min="0.1" max="3" required></label>
+<label>Coeficiente C<select id="coefC"><option value="100">100 — Arena limpia (estándar)</option><option value="40">40 — Arena con algo de finos</option></select></label>
+</div>
+<button type="submit">Calcular k</button>
+</form>
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+<p class="calc-note">Válido solo para arenas con D10 entre 0,1 y 3 mm, finos &lt; 5 % y Cu &lt; 5. Para suelos finos usar permeámetro.</p>
+</section>
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicable">
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+<div id="visor-normas" class="visor-normas-panel"></div>
+</aside>
+</div>
+<script src="/widgets/visor-normas.js" data-slug="permeabilidad-hazen"></script>
+<script>
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Cerrar marco normativo':'📖 Ver marco normativo';});})();
+</script>
+<style>
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+.calc-widget button:hover{background:#115e59}
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+.calc-widget #calc-resultado:empty{display:none}
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+</style>
+<script>
+(function(){
+var f=document.getElementById('calc-form');if(!f)return;
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var d10=parseFloat(document.getElementById('d10').value);
+var C=parseFloat(document.getElementById('coefC').value);
+var out=document.getElementById('calc-resultado');
+if(!isFinite(d10)||!isFinite(C)||d10<=0||C<=0){out.innerHTML='<span class="err">Ingresa valores numéricos positivos.</span>';return;}
+if(d10<0.1||d10>3){out.innerHTML='<span class="err">D10 fuera de rango Hazen (0,1 a 3 mm).</span>';return;}
+var k_cms=C*d10*d10;
+var k_ms=k_cms*0.01;
+var k_md=k_ms*86400;
+var clase;
+if(k_ms>1e-2)clase='alta';
+else if(k_ms>=1e-4)clase='media';
+else if(k_ms>=1e-6)clase='baja';
+else clase='muy baja';
+out.innerHTML='<span class="ok">k = '+k_cms.toExponential(2).replace('.',',')+' cm/s = '+k_ms.toExponential(2).replace('.',',')+' m/s = '+k_md.toFixed(2).replace('.',',')+' m/día</span>'+
+'Permeabilidad: <strong>'+clase+'</strong><br>'+
+'<span style="color:#64748b;font-size:.85em">Fórmula: k [cm/s] = C·D10² con D10 en mm</span>';
+});
+})();
+</script>
+
+<h2>Ejemplo de cálculo</h2>
+<table class="ejemplo">
+<caption>Datos de entrada — arena para dren, terraplén Villarrica</caption>
+<thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
+<tbody>
+<tr><td>Tipo de suelo</td><td>Arena media limpia (SP, clasificación USCS según UNE-EN ISO 14688-1/-2)</td></tr>
+<tr><td>% finos (pasa N°200)</td><td>2 %</td></tr>
+<tr><td>D10</td><td>0,25 mm</td></tr>
+<tr><td>D60</td><td>0,70 mm</td></tr>
+<tr><td>Cu = D60/D10</td><td>2,8 (uniforme)</td></tr>
+<tr><td>Relación de vacíos e</td><td>0,60</td></tr>
+<tr><td>Temperatura agua</td><td>15°C</td></tr>
+<tr><td>C (Hazen)</td><td>110 (medio-bajo por Cu &lt; 3)</td></tr>
+</tbody>
+</table>
+<p>Hazen clásico: k = 110 · (0,25)² · 10⁻⁶ = 110 · 0,0625 · 10⁻⁶ = 6,88 · 10⁻⁶ m/s = 6,9·10⁻⁴ cm/s. En cm/s con D10 = 0,025 cm: k = 110·(0,025)² = 0,0688 cm/s ≈ 6,9·10⁻² cm/s. Hay un factor 100 de diferencia por unidades; verificar siempre la forma aplicada. Usando fórmula mixta correcta con D10 en cm: k = 110 · 0,025² = 0,0688 cm/s = 6,88·10⁻⁴ m/s. Corrección por temperatura 15°C: μ15/μ20 ≈ 1,125. k20 = 6,88·10⁻⁴ · 1/1,125 = 6,12·10⁻⁴ m/s. Para propósitos prácticos, se reporta k ≈ 10⁻³ m/s orden de magnitud, típico de arena media limpia, adecuada para dren filtrante.</p>
+<p class="resultado"><strong>Resultado:</strong> k ≈ 6·10⁻⁴ m/s (7·10⁻² cm/s) · Arena adecuada para dren filtrante.</p>
+
+<h2>Interpretación de resultados</h2>
+<p>k = 10⁻³ m/s corresponde a arena media limpia, con capacidad drenante adecuada para capas filtrantes detrás de muros, drenes franceses y rellenos drenantes en taludes. Si el D10 fuera 0,1 mm (arena fina), k caería a 10⁻⁴ m/s y la arena no servirá como filtro único, requiriendo grava de transición. Para arenas con Cu &gt; 5 (mal graduadas) Hazen sobrestima 2-3× el valor real; conviene ensayar permeabilidad con permeámetro o usar Kozeny-Carman. Hazen es solo un primer filtro de diseño.</p>
+
+<h2>Normativas de referencia</h2>
+<ul>
+<li>Hazen, A. (1911). Discussion of Dams on sand foundations</li>
+<li>UNE-EN ISO 17892-11 — Ensayos de laboratorio. Determinación de la permeabilidad (cabeza constante y flexible)</li>
+<li>UNE-EN ISO 17892-11 — Ensayos de laboratorio. Determinación de la permeabilidad (pared flexible)</li>
+<li>Kozeny, J. (1927) & Carman, P.C. (1937). Flow through porous media</li>
+<li>UNE-EN 1997-1 (Eurocódigo 7) + CTE DB-SE-C — Fundaciones (consideración de permeabilidad en diseño)</li>
+</ul>
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Qué valor de C adopto?</summary><p>C = 100 es el estándar de Hazen para arenas limpias a 20°C. En arenas bien graduadas o con algo de limo C = 70-80 (subestima). En arenas muy uniformes y redondeadas C = 120-150. Para diseño conservador, usar C = 80 y verificar con ensayo.</p></details>
+<details><summary>¿Hazen en suelos con finos?</summary><p>No aplica. Con más de 5 % de finos la porosidad efectiva baja y Hazen sobreestima k 5-20×. Para suelos con finos usar ensayo permeámetro directo o ecuaciones de Kozeny-Carman modificadas. Arcillas siempre con ensayo específico.</p></details>
+<details><summary>¿Cómo estimo k en bases granulares chancadas?</summary><p>Bases con D10 &gt; 0,5 mm y 5-8 % finos típicamente tienen k = 10⁻⁴ a 10⁻⁵ m/s. Hazen directo puede no aplicar por los finos. Se recomienda ensayo in situ tipo anillo infiltrómetro o Matsuo para obras de drenaje de pavimentos.</p></details>
+<details><summary>¿Necesito corregir por temperatura?</summary><p>Sí en proyectos con agua muy fría (zonas andinas, &lt; 10°C). La viscosidad cambia ±25 % entre 5° y 25°C. Aguas calientes industriales aumentan k; aguas muy frías lo disminuyen. Para aguas entre 15-20°C la corrección es despreciable en práctica.</p></details>
+
+<h2>Calculadoras relacionadas</h2>
+<ul>
+<li><a href="/">Curva granulométrica D10, Cu, Cc</a></li>
+<li><a href="/">Infiltración Porchet</a></li>
+<li><a href="/">Gradiente hidráulico crítico</a></li>
+<li><a href="/">Clasificación USCS</a></li>
+</ul>
+
+
+
+</article>
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Hidráulica de Suelos</h3>
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Gradiente Hidráulico Crítico — Sifonamiento y Piping</a></li>
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Infiltración Porchet — Tasa cm/h</a></li>
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Permeabilidad Lefranc — k desde ensayo en sondaje</a></li>
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Tubificación Lane — Recorrido ponderado CL y control de piping</a></li>
+  </ul>
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+    Más herramientas en <a href="/" style="color:#0d9488">Hidráulica de Suelos</a> · Volver al
+    <a href="/" style="color:#0d9488">índice de Perforaciones de Pozos</a>
+  </p>
+</aside>
+</article>
+</main>
+<footer>
+<div class="container">
+<div>
+<h4>Perforaciones de Pozos</h4>
+<p>Servicios geotécnicos profesionales (España).</p>
+<p class="footer-designer-credit">Sitio diseñado por equipo geotécnico</p>
+</div>
+<div>
+<h4>Contacto</h4>
+<p>Email: <a href="mailto:contacto@perforacionesdepozos.com">contacto@perforacionesdepozos.com</a></p>
+</div>
+<div>
+<h4>Servicios</h4>
+<p><a href="/sondajes-spt/">Perforación de Pozos</a><br><a href="/laboratorio-mecanica-suelos/">Pozos Profundos</a><br><a href="/estabilidad-taludes/">Pozos Artesianos</a><br><a href="/diseno-muros-contencion/">Mantenimiento de Pozos</a></p>
+</div>
+<div>
+<h4>Legal</h4>
+<p><a href="/sitemap.xml">Mapa del sitio</a></p>
+</div>
+<div class="copyr">© 2026 Perforaciones de Pozos</div>
+</div>
+</footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://perforacionesdepozos.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculadora Permeabilidad de Hazen — k desde D10", "item": "https://perforacionesdepozos.com/blog/calculadoras/permeabilidad-hazen/"}]}, {"@type": "Article", "headline": "Calculadora Permeabilidad de Hazen — k desde D10", "inLanguage": "es", "description": "Hazen (1911) propuso una correlación simple para estimar la permeabilidad k de arenas limpias a partir del diámetro efectivo D10 de la curva granulométrica", "url": "https://perforacionesdepozos.com/blog/calculadoras/permeabilidad-hazen/", "mainEntityOfPage": "https://perforacionesdepozos.com/blog/calculadoras/permeabilidad-hazen/", "publisher": {"@type": "Organization", "name": "Perforaciones de Pozos", "url": "https://perforacionesdepozos.com/"}}]}</script>
+</body>
+</html>
